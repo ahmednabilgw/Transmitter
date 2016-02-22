@@ -1,0 +1,31 @@
+
+ int data=3;                      //Photodiode to digital pin 2
+ void setup()    
+ {  
+  pinMode(data,OUTPUT);  
+   Serial.begin(9600); 
+ 
+
+       //setting serial monitor at a default baund rate of 9600  
+ }  
+ void loop()  
+ {  
+     digitalWrite(data,1);
+      delay(5);
+   digitalWrite(data,0);
+       delay(5);
+        digitalWrite(data,1);
+     delay(5);
+     digitalWrite(data,0);
+     delay(5);
+   digitalWrite(data,0);
+       delay(5);
+        digitalWrite(data,0);
+     delay(5);
+   digitalWrite(data,0);
+       delay(5);
+        digitalWrite(data,0);
+     delay(1000);
+   
+  
+ }
